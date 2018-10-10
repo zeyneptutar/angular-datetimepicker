@@ -1,0 +1,317 @@
+html, body, div, caption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  font: 13px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
+  color: #404040;
+}
+
+.caption-text {
+  font-weight: bold;
+}
+
+.datetimepicker-switch {
+  font-weight: bold;
+  font-size: 16px !important;
+}
+
+.datetimepicker-switch span {
+  padding-top: 0.10rem;
+}
+
+.current-date-item  {
+  color: #fff !important;
+  background: #0b79b5;
+  padding: .25rem .75rem;
+  border-radius: 3px;
+}
+
+.datepicker a:hover{
+  cursor: pointer;
+  border-radius: 3px;
+  background: #ccc;
+  color: #fff !important;
+  padding: .25rem .75rem;
+}
+
+span {
+  cursor: pointer;
+}
+
+.monthpicker {
+  font-weight: 500;
+}
+
+.monthpicker a:hover{
+  cursor: pointer;
+  border-radius: 3px;
+  background: #ccc;
+  color: #fff !important;
+  padding: 1rem 1rem;
+}
+
+.monthpicker .current-date-item {
+  padding: 1rem 1rem;
+}
+
+.yearpicker {
+  font-weight: 500;
+}
+
+.yearpicker .current-date-item {
+  padding: .90rem .80rem;
+}
+
+.yearpicker a:hover{
+  cursor: pointer;
+  border-radius: 3px;
+  background: #ccc;
+  color: #fff !important;
+  padding: .90rem .80rem;
+}
+
+
+.row {
+  margin: auto !important;
+  text-align: center;
+}
+
+.cal-container {
+  width: 30%;
+}
+
+.cal-div {
+  width: 100%;
+  z-index: 999;
+  background: #fff;
+  display: inline-block;
+  vertical-align: baseline;
+  zoom: 1;
+  *display: inline;
+  *vertical-align: auto;
+  /*box-shadow: 0px 0px 6px rgba(0,0,0,0.2);*/
+  border-radius: 3px;
+  border: 1px solid rgba(0,0,0,0.120);
+  height: 100%;
+}
+
+.cal:before {
+  content: '';
+  position: absolute;
+  bottom: 3px;
+  left: 4px;
+  right: 4px;
+  height: 6px;
+  border: 1px solid #909090;
+  border-radius: 4px;
+}
+
+.cal a {
+  text-decoration: none;
+}
+
+.cal-table {
+  position: relative;
+  width: 100%;
+}
+
+.cal-caption {
+  width: 100%;
+  line-height: 32px;
+  text-align: center;
+  caption-side: top;
+  background: #fff;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.cal-caption a {
+  line-height: 28px;
+  font-size: 20px;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.cal-caption span {
+  color:#212529;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cal-body td {
+  width: 30px;
+  font-size: 14px;
+  position: relative;
+}
+
+.cal-body {
+  position: relative;
+  line-height: 26px;
+  color: #555;
+  text-align: center;
+}
+
+.months {
+  line-height: 32px !important;
+  font-weight: 450;
+}
+
+.time-btn {
+  cursor: pointer;
+}
+
+/*.cal-body td:hover {
+  cursor: pointer;
+  color: #fff !important;
+  background: #d0d0d0;
+  border-radius: 3px;
+  text-align: center;
+}*/
+
+.cal-off a {
+  visibility: hidden;
+}
+
+.cal-current-item {
+  color: #fff !important;
+  background: #0b79b5;
+ /* background: #d0d0d0; */
+  border-radius: 3px;
+  text-align: center;
+}
+.cal tr:first-child td {
+  border-top: 0;
+}
+
+.cal td:first-child {
+  border-left: 0;
+}
+
+.cal tr:first-child a {
+  border-top: 0;
+  margin-top: 0;
+}
+
+.cal tr:last-child a {
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+
+.cal td:first-child a {
+  border-left: 0;
+  margin-left: 0;
+}
+
+.cal td:last-child a {
+  border-right: 0;
+  margin-right: 0;
+}
+
+.cal tr:last-child td:first-child a {
+  border-radius: 0 0 0 3px;
+}
+
+.cal tr:last-child td:last-child a {
+  border-radius: 0 0 3px 0;
+}
+
+/*.cal-selected a, .cal-body a:active {
+  color: #fff;
+  z-index: 1;
+  width: 25px;
+  height: 25px;
+  border-radius: 3px;
+  background: #31b0d5;
+
+}
+*/
+
+.cal-disable a {
+  margin: -1px;
+  color: #000;
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid #e7d4d4;
+  cursor: default;
+}
+
+.cal-disable a:hover {
+  background: rgba(0, 0, 0, 0.1);
+  cursor: default;
+}
+
+
+.cal-option {
+}
+
+.days {
+  text-align: center;
+}
+
+.card-body {
+  margin: 0;
+  padding: 0;
+}
+
+.cal-div td a {
+  padding: 10px;
+}
+.cal-div td a:hover {
+  padding: 10px;
+  color: #fff !important;
+  background: #cccfd1;
+  /* background: #d0d0d0; */
+  border-radius: 3px;
+  text-align: center;
+}
+
+.card-header {
+  background-color: #fff;
+  padding: 0.75rem 1.25rem;
+  font-size: 13px;
+  color: #212529;
+  border-bottom: none;
+}
+
+.card {
+  width: 100%;
+}
+
+.form-control  {
+  height: 31px !important;
+  border-radius: 0.25rem !important;
+}
+
+.button {
+  border: none;
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+.esp-timepicker-wrapper {
+  width: 100%;
+  text-align: center;
+  border-radius: 4px;
+  padding: 5px
+}
+
+.esp-timepicker-wrapper .timepicker-line {
+}
+
+.esp-timepicker-wrapper .esp-time-button {
+  display: block;
+  cursor: pointer
+}
+
+.esp-timepicker-wrapper .esp-time, .esp-timepicker-wrapper .esp-time-dot {
+  display: block;
+  padding: 15px 0px
+}
