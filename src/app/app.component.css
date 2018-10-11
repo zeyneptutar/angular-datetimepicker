@@ -1,4 +1,4 @@
-html, body, div, caption {
+html, body, div {
   margin: 0;
   padding: 0;
   border: 0;
@@ -10,6 +10,23 @@ html, body, div, caption {
 body {
   font: 13px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
   color: #404040;
+}
+
+.container {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.row {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+  text-align: center;
+
+}
+
+.row > .col, .row > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
 }
 
 .caption-text {
@@ -32,12 +49,16 @@ body {
   border-radius: 3px;
 }
 
-.datepicker a:hover{
+.datepicker .esp-date-day a {
+  display: block;
+  padding: .25rem 0px
+}
+
+.datepicker .esp-date-day a:hover{
   cursor: pointer;
   border-radius: 3px;
   background: #ccc;
   color: #fff !important;
-  padding: .25rem .75rem;
 }
 
 span {
@@ -48,12 +69,17 @@ span {
   font-weight: 500;
 }
 
-.monthpicker a:hover{
+.monthpicker .esp-date-month a {
+  display: block;
+  padding: .75rem 0px;
+
+}
+
+.monthpicker .esp-date-month a:hover{
   cursor: pointer;
   border-radius: 3px;
   background: #ccc;
   color: #fff !important;
-  padding: 1rem 1rem;
 }
 
 .monthpicker .current-date-item {
@@ -68,22 +94,20 @@ span {
   padding: .90rem .80rem;
 }
 
-.yearpicker a:hover{
+.yearpicker .esp-date-year a{
+  display: block;
+  padding: .75rem 0px;
+}
+
+.yearpicker .esp-date-year a:hover{
   cursor: pointer;
   border-radius: 3px;
   background: #ccc;
   color: #fff !important;
-  padding: .90rem .80rem;
 }
 
-
-.row {
-  margin: auto !important;
-  text-align: center;
-}
-
-.cal-container {
-  width: 30%;
+.calendar {
+  width: 375px;
 }
 
 .cal-div {
@@ -101,173 +125,9 @@ span {
   height: 100%;
 }
 
-.cal:before {
-  content: '';
-  position: absolute;
-  bottom: 3px;
-  left: 4px;
-  right: 4px;
-  height: 6px;
-  border: 1px solid #909090;
-  border-radius: 4px;
-}
-
-.cal a {
-  text-decoration: none;
-}
-
-.cal-table {
-  position: relative;
-  width: 100%;
-}
-
-.cal-caption {
-  width: 100%;
-  line-height: 32px;
-  text-align: center;
-  caption-side: top;
-  background: #fff;
-  margin-top: 5px;
-  margin-bottom: 10px;
-}
-
-.cal-caption a {
-  line-height: 28px;
-  font-size: 20px;
-  font-weight: normal;
-  cursor: pointer;
-}
-
-.cal-caption span {
-  color:#212529;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.cal-body td {
-  width: 30px;
-  font-size: 14px;
-  position: relative;
-}
-
-.cal-body {
-  position: relative;
-  line-height: 26px;
-  color: #555;
-  text-align: center;
-}
-
-.months {
-  line-height: 32px !important;
-  font-weight: 450;
-}
-
-.time-btn {
-  cursor: pointer;
-}
-
-/*.cal-body td:hover {
-  cursor: pointer;
-  color: #fff !important;
-  background: #d0d0d0;
-  border-radius: 3px;
-  text-align: center;
-}*/
-
-.cal-off a {
-  visibility: hidden;
-}
-
-.cal-current-item {
-  color: #fff !important;
-  background: #0b79b5;
- /* background: #d0d0d0; */
-  border-radius: 3px;
-  text-align: center;
-}
-.cal tr:first-child td {
-  border-top: 0;
-}
-
-.cal td:first-child {
-  border-left: 0;
-}
-
-.cal tr:first-child a {
-  border-top: 0;
-  margin-top: 0;
-}
-
-.cal tr:last-child a {
-  border-bottom: 0;
-  margin-bottom: 0;
-}
-
-.cal td:first-child a {
-  border-left: 0;
-  margin-left: 0;
-}
-
-.cal td:last-child a {
-  border-right: 0;
-  margin-right: 0;
-}
-
-.cal tr:last-child td:first-child a {
-  border-radius: 0 0 0 3px;
-}
-
-.cal tr:last-child td:last-child a {
-  border-radius: 0 0 3px 0;
-}
-
-/*.cal-selected a, .cal-body a:active {
-  color: #fff;
-  z-index: 1;
-  width: 25px;
-  height: 25px;
-  border-radius: 3px;
-  background: #31b0d5;
-
-}
-*/
-
-.cal-disable a {
-  margin: -1px;
-  color: #000;
-  background: rgba(0, 0, 0, 0.1);
-  border: 1px solid #e7d4d4;
-  cursor: default;
-}
-
-.cal-disable a:hover {
-  background: rgba(0, 0, 0, 0.1);
-  cursor: default;
-}
-
-
-.cal-option {
-}
-
-.days {
-  text-align: center;
-}
-
 .card-body {
   margin: 0;
   padding: 0;
-}
-
-.cal-div td a {
-  padding: 10px;
-}
-.cal-div td a:hover {
-  padding: 10px;
-  color: #fff !important;
-  background: #cccfd1;
-  /* background: #d0d0d0; */
-  border-radius: 3px;
-  text-align: center;
 }
 
 .card-header {
@@ -294,8 +154,6 @@ span {
   cursor: pointer;
 }
 
-
-
 .esp-timepicker-wrapper {
   width: 100%;
   text-align: center;
@@ -315,3 +173,13 @@ span {
   display: block;
   padding: 15px 0px
 }
+
+/* :host /deep/ .esp-timepicker-wrapper imagebox > div > div {
+  margin: 0 auto
+}
+:host /deep/ .esp-timepicker-wrapper .esp-time-button imagebox svg > path{
+  fill: #939393 !important
+}
+:host /deep/ .esp-timepicker-wrapper .esp-time-button:hover imagebox svg > path{
+  fill: #000000 !important
+} */
